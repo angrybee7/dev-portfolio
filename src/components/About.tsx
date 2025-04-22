@@ -113,14 +113,12 @@ const About: React.FC = () => {
               <div className="flex items-center gap-2 mb-4">
                 <Award className="w-6 h-6 text-yellow-400 animate-bounce" />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Full Stack AI Developer with 8+ Years Experience
+                  Full Stack Blockchain and MERN Stack Developer with 8+ Years Experience
                   <span className="text-indigo-600 dark:text-indigo-400">.</span>
                 </h3>
               </div>
               <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate Full Stack AI developer with over 8 years of professional experience building modern, 
-                responsive web applications, AI Chatbots, and AI Agents and AI Automation and No-Code AI Solutions. I specialize in React, TypeScript, and modern CSS frameworks to create 
-                beautiful and functional user interfaces. And I am a AI Developer with a passion for creating innovative solutions that help businesses grow and improve their operations and customer engagement.
+              I am an experienced full-stack blockchain and MERN stack developer with over 8 years of experience building web apps, blockchain solutions and leading projects as a project manager. I specialize in Solidity and Rust for secure smart contracts, MERN stack (MongoDB, Express.js, React, Node.js) and TypeScript for reactive and user-friendly interfaces. I am passionate about accelerating business growth using technology, developing efficient and innovative solutions that improve operations and customer engagement.
               </p>
             </div>
             

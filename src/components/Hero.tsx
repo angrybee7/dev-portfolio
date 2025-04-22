@@ -8,13 +8,10 @@ const TypewriterText: React.FC = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const titles = [
-    'Full Stack AI Developer',
-    'React Specialist',
+    'Full Stack Blockchain Developer',
+    'MERN Stack Developer',
     'UI/UX Enthusiast',
-    'AI Chatbot Developer',
-    'AI Agent Developer',
-    'AI Automation Developer',
-    'No-Code AI Solutions Developer',
+    'Project Manager',
   ];
 
   useEffect(() => {
@@ -111,13 +108,13 @@ const Hero: React.FC = () => {
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 relative group">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">
-              Dark&Moon
+              Angry&Bee
             </span>
             <Zap className="absolute -right-8 top-0 w-6 h-6 text-yellow-400 animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mb-10 relative">
-            Crafting beautiful, responsive, and user-friendly web experiences with modern technologies and implementing AI solutions to automate tasks and improve operations and chatbots.
+            Crafting beautiful, responsive, and user-friendly web experiences with modern technologies and implementing Blockchain solutions to automate tasks and improve operations and Trading bot.
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
           </p>
 
