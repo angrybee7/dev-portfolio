@@ -17,34 +17,34 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive dashboard for e-commerce businesses with analytics, inventory management, and order processing.",
+      title: "Presale Website",
+      description: "platform that combines blockchain technology, artificial intelligence, and social media specifically designed for influencers and the fashion industry.",
       // image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      image: "/images/ecommerce-haru-fashion.png",
-      tags: ["React", "TypeScript", "Redux"],
+      image: "/images/presale.png",
+      tags: ["React", "TypeScript", "Redux", "Solidity", "Ether.js", "hardhat"],
       // liveUrl: "https://kachabazar-store-nine.vercel.app/",
-      liveUrl: "https://haru-fashion.vercel.app/",
-      githubUrl: "https://github.com/darkmoon810/haru-fashion"
+      liveUrl: "https://app.insoblokai.io/",
+      githubUrl: "https://github.com/angrybee7/presale"
     },
     {
       id: 2,
-      title: "Portfolio Website Builder",
-      description: "A dynamic portfolio website builder that allows developers to create and customize their professional portfolios with ease. Features theme customization, project showcasing, and real-time preview.",
+      title: "Portfolio Website",
+      description: "A dynamic portfolio website that allows developers to create and customize their professional portfolios with ease. Features theme customization, project showcasing, and real-time preview.",
       // image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
       image: "/images/portfolio-website.png",
       tags: ["React", "TypeScript", "TailwindCSS"],
       liveUrl: "https://darkmoonportfolio.vercel.app/",
-      githubUrl: "https://github.com/darkmoon810/darkmoon_portfolio"
+      githubUrl: "https://github.com/angrybee7/dev-portfolio"
     },
     {
       id: 3,
-      title: "Blog Platform",
-      description: "A modern blog platform with markdown support, categories, search functionality, and a clean reading experience.",
+      title: "AI-agent Platform",
+      description: "It operates by identifying valuable content and allowing users to tip creators with cryptocurrency. ",
       // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      image: "/images/blog-platform.png",
-      tags: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
-      liveUrl: "https://ten-blog.vercel.app/",
-      githubUrl: "https://github.com/darkmoon810/nextjs-blog"
+      image: "/images/0xsimulation.png",
+      tags: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS", "AI-agent"],
+      liveUrl: "https://0xsim.ai/",
+      githubUrl: "https://github.com/angrybee7/0xsim-terminal-website"
     },
     {
       id: 4,
@@ -54,35 +54,90 @@ const Projects: React.FC = () => {
       image: "/images/task-management.png",
       tags: ["React", "Javascript", "Redux"],
       liveUrl: "https:/dk-task-management.com",
-      githubUrl: "https://github.com/darkmoon810/Task-Management-Dashboard"
+      githubUrl: "https://github.com/angrybee7/Task-Management-System"
     },
     {
       id: 5,
-      title: "Real-time Chat Application",
-      description: "A modern chat application with real-time messaging, file sharing, and group chat capabilities. Features end-to-end encryption and message persistence.",
-      image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Node.js", "Socket.io"],
-      liveUrl: "https://dk-realtimechat.app",
-      githubUrl: "https://github.com/darkmoon810/Real-Time-Chat-Application"
+      title: "E-Commerce Dashboard",
+      description: "A comprehensive dashboard for e-commerce businesses with analytics, inventory management, and order processing.",
+      // image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/ecommerce-haru-fashion.png",
+      tags: ["React", "TypeScript", "Redux"],
+      // liveUrl: "https://kachabazar-store-nine.vercel.app/",
+      liveUrl: "https://haru-fashion.vercel.app/",
+      githubUrl: "https://github.com/angrybee7/haru-trending-site"
     },
     {
       id: 6,
-      title: "Auto Media TweetTelegram",
-      description: "Make.com scenario where given a drive folder of media (images & videos), it will randomly grab one. GPT-Vision will analyze the media, then GPT-4 will create a tweet from a fine-tuned model. Dependent on if the media is an image or video, it will upload that media to X/Twitter and Telegram. The scenario was designed to randomly reschedule itself during day-time hours for the next day.",
-      image: "/images/Auto Media TweetTelegram  Make.com  ChatGPT.png",
-      tags: ["Telegram","ChatGPT","AI Builder","API","Automation","Make.com","Twitter/X","System Automation"],
-      liveUrl: "https://darkmoonportfolio.vercel.app",
-      githubUrl: "https://darkmoonportfolio.vercel.app"
+      title: "Blog Platform",
+      description: "A modern blog platform with markdown support, categories, search functionality, and a clean reading experience.",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/blog-platform.png",
+      tags: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
+      liveUrl: "https://ten-blog.vercel.app/",
+      githubUrl: "https://github.com/angrybee7/nextjs-blog"
     },
     {
       id: 7,
-      title: "Auto Transaction Matcher",
-      description: "Make.com solution to automatically create a sheet from a bank statement, and given a folder of invoices, attach each invoice with AI to their specific transaction in the sheet.",
-      image: "/images/Auto Transaction Matcher  Make.com  OpenAI  Sheets.png",
-      tags: ["Make.com","Automation","Google Sheets","System Automation","ChatGPT","OpenAI API","AI Data Analytics"],
-      liveUrl: "https://darkmoonportfolio.vercel.app",
-      githubUrl: "https://darkmoonportfolio.vercel.app"
-    }
+      title: "TradingView Chart",
+      description: "Implemented the tradingview chart using websocket and tradingview.",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/tradingview-ohlcv.png",
+      tags: [ "TradingView", "Next.js", "TypeScript", "MongoDB", "TailwindCSS",  "Websocket.io"],
+      liveUrl: "/",
+      githubUrl: "https://github.com/angrybee7/tradingview_chart_homa"
+    },
+    {
+      id: 8,
+      title: "crypto trading bot - Falcon",
+      description: "Telegram trading bot that enables users to execute trades instantly within the app. Users can fund their wallet with ETH or SOL and start trading immediately. ",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/falcon.png",
+      tags: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS", "Node.js/Express"],
+      liveUrl: "https://falcon.bot/",
+      githubUrl: "https://github.com/angrybee7/falcon"
+    },
+    {
+      id: 9,
+      title: "Social Smart Wallet & Dynamic NFT Protocol - Bonuz",
+      description: "It functions as a social smart wallet and dynamic NFT protocol, positioning itself as a Web2.5 revolution that bridges traditional web experiences with blockchain technology ",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/bonuz.png",
+      tags: ["Next.js", "React-Native", "MongoDB", "TailwindCSS", "Solidity", "Web3.js", "hardhat"],
+      liveUrl: "https://bonuz.market/",
+      githubUrl: "https://github.com/angrybee7/bonuz"
+    },
+    {
+      id: 10,
+      title: "Token launchpad",
+      description: "platform focused on cryptocurrency token creation and management. ",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/safetokenx.png",
+      tags: ["Next.js", "MongoDB", "TailwindCSS", "Solidity", "Web3.js", "Rust", "ancho-framework", "hardhat"],
+      liveUrl: "https://safetokenx.vercel.app/",
+      githubUrl: "https://github.com/angrybee7/launchpad-safetokenx"
+    },
+    {
+      id: 11,
+      title: "Solana Swap Platform",
+      description: "The platform combines features of both centralized exchanges (CEX) and decentralized exchanges (DEX) to create what they call a hybrid trading experience",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/biokript.png",
+      tags: ["React", "TailwindCSS", "MongoDB", "Node.js", "rust", "ancho-framework", "Web3.js", "hardhat"],
+      liveUrl: "https://swap.biokript.com/",
+      githubUrl: "https://github.com/angrybee7/swap-biokript"
+    },
+    {
+      id: 12,
+      title: "NFT Marketplace",
+      description: "The platform combines features of both centralized exchanges (CEX) and decentralized exchanges (DEX) to create what they call a hybrid trading experience",
+      // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/images/ghost.png",
+      tags: ["React", "TailwindCSS", "Node.js/Express.js", "MongoDB", "solidity", "Web3.js", "hardhat"],
+      liveUrl: "https://ghostmarket.io/",
+      githubUrl: "https://github.com/angrybee7/NFT_marketplace_etherem"
+    },
+
   ];
 
   const filters = ['all', 'React', 'TypeScript', 'JavaScript', 'Node.js', 'MongoDB', 'Redux', 'Next.js', 'TailwindCSS', 'Socket.io'];
@@ -95,7 +150,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Recently Projects</h2>
           <div className="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto"></div>
           <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
             Check out some of my recent work. These projects showcase my skills and experience.
@@ -103,7 +158,7 @@ const Projects: React.FC = () => {
         </div>
         
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        {/* <div className="flex flex-wrap justify-center gap-2 mb-12">
           {filters.map(filter => (
             <button
               key={filter}
@@ -117,10 +172,10 @@ const Projects: React.FC = () => {
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
             </button>
           ))}
-        </div>
+        </div> */}
         
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 

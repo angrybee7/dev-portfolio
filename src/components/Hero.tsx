@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Github as GitHub, Linkedin, Mail, ArrowDown,Zap } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { FaTelegramPlane } from "react-icons/fa";
+import { Github as GitHub, Linkedin, Mail, ArrowDown, Zap } from "lucide-react";
 
 const TypewriterText: React.FC = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const titles = [
-    'Full Stack Blockchain Developer',
-    'MERN Stack Developer',
-    'UI/UX Enthusiast',
-    'Project Manager',
+    "Full Stack Blockchain Developer",
+    "MERN Stack Developer",
+    "UI/UX Enthusiast",
+    "Bot Master",
+    "Project Manager",
   ];
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const TypewriterText: React.FC = () => {
 
       if (!isDeleting && text === fullText) {
         setTimeout(() => setIsDeleting(true), 2000);
-      } else if (isDeleting && text === '') {
+      } else if (isDeleting && text === "") {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
       }
@@ -49,17 +51,20 @@ const TypewriterText: React.FC = () => {
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Textured background */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/80 to-white/80 dark:from-gray-900/80 dark:to-gray-800/80 backdrop-blur-sm"></div>
-      
+
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-indigo-300 dark:bg-indigo-700 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-3xl opacity-30 animate-blob"></div>
       <div className="absolute top-40 right-10 w-72 h-72 bg-pink-300 dark:bg-pink-700 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -97,46 +102,59 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col mt-16 md:mt-0 items-center text-center">
           {/* Animated icons */}
 
-          <div className="text-5xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 flex justify-around">
-            <div className="ml-5 mr-5 text-indigo-600 dark:text-indigo-400">[</div>
+          <div className="text-xl md:text-5xl font-bold text-gray-900 dark:text-white  mb-6 flex justify-around">
+            <div className="ml-5 mr-5 text-indigo-600 dark:text-indigo-400">
+              [
+            </div>
             <TypewriterText />
-            <div className="ml-5 mr-5 text-indigo-600 dark:text-indigo-400">]</div>
+            <div className="ml-5 mr-5 text-indigo-600 dark:text-indigo-400">
+              ]
+            </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 relative group">
+          <h1 className="text-4xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 relative group">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">
-              Angry&Bee
+             Oleksii Kozhukhar
             </span>
             <Zap className="absolute -right-8 top-0 w-6 h-6 text-yellow-400 animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mb-10 relative">
-            Crafting beautiful, responsive, and user-friendly web experiences with modern technologies and implementing Blockchain solutions to automate tasks and improve operations and Trading bot.
+          Specializing in the development of elegant, responsive, and user-friendly web experiences utilizing modern technologies. Implement blockchain solutions using Solidity and Rust, and enhance operational efficiency through the development of trading bots.
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
           </p>
 
           <div className="flex space-x-6 mb-12">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            
+            <a
+              href="https://github.com/angrybee7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
             >
               <GitHub size={24} />
             </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://t.me/angrybee7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
+            >
+              <FaTelegramPlane size={24} />
+            </a>
+            {/* <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
             >
               <Linkedin size={24} />
-            </a>
-            <a 
-              href="mailto:your.email@example.com" 
+            </a> */}
+            <a
+              href="mailto:angrybee.contact@gmail.com"
               className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
             >
               <Mail size={24} />
@@ -149,7 +167,10 @@ const Hero: React.FC = () => {
             aria-label="Scroll down"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <ArrowDown className="relative z-10 transform group-hover:translate-y-1 transition-transform duration-300" size={20} />
+            <ArrowDown
+              className="relative z-10 transform group-hover:translate-y-1 transition-transform duration-300"
+              size={20}
+            />
           </button>
           <div className="mt-4 text-sm text-gray-600 dark:text-gray-400 animate-pulse">
             Scroll to explore

@@ -19,11 +19,25 @@ import {
   SiJest,
   SiFigma,
   SiGithubactions,
+  SiWeb3Dotjs,
+  SiSolidity,
+  SiRust,
+  SiLaravel,
+  SiPhp,
+  SiDjango,
+  SiMui  
+
 } from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
 import { FaCode, FaServer, FaTools } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
 import { Code, Sparkles} from 'lucide-react';
+
+import { FaEthereum } from 'react-icons/fa';
+import { RiAnchorLine } from 'react-icons/ri'; // anchor-like icon
+import { PiCodeBlockFill } from 'react-icons/pi'; // optional fallback icon for Anchor
+import { RiToolsLine } from 'react-icons/ri'; // for Hardhat
+import { GiNetworkBars } from 'react-icons/gi';
 
 interface SkillItemProps {
   name: string;
@@ -152,17 +166,29 @@ const SkillCategory: React.FC<{ title: string; icon: React.ReactNode; skills: { 
 };
 
 const Skills: React.FC = () => {
+  const blockchainSkills = [
+    { name: 'Solidity', level: 90, icon: <SiSolidity size={18} /> },
+    { name: 'Rust', level: 80, icon: <SiRust size={18} /> },
+    { name: 'Anchor Framework', level: 75, icon: <RiAnchorLine size={18} /> },
+    { name: 'Ethers.js', level: 85, icon: <FaEthereum size={18} /> },
+    { name: 'Web3.js', level: 80, icon: <SiWeb3Dotjs size={18} /> },
+    { name: 'Wagmi', level: 82, icon: <GiNetworkBars size={18} /> },
+{ name: 'Hardhat', level: 88, icon: <RiToolsLine size={18} /> },
+  ];
+
   const languageSkills = [
     { name: 'JavaScript', level: 95, icon: <SiJavascript size={18} /> },
     { name: 'TypeScript', level: 85, icon: <SiTypescript size={18} /> },
     { name: 'HTML', level: 99, icon: <SiHtml5 size={18} /> },
     { name: 'CSS/SCSS', level: 98, icon: <SiCss3 size={18} /> },
     { name: 'Python', level: 70, icon: <SiPython size={18} /> },
+    { name: 'PHP', level: 80, icon: <SiPhp size={18} /> },
   ];
 
   const frameworkSkills = [
     { name: 'React', level: 99, icon: <SiReact size={18} /> },
     { name: 'Redux', level: 98, icon: <SiRedux size={18} /> },
+    { name: 'Material UI', level: 92, icon: <SiMui size={18} /> },
     { name: 'Tailwind CSS', level: 98, icon: <SiTailwindcss size={18} /> },
     { name: 'Next.js', level: 97, icon: <SiNextdotjs size={18} /> },
     { name: 'Vue.js', level: 99, icon: <SiVuedotjs size={18} /> },
@@ -171,18 +197,22 @@ const Skills: React.FC = () => {
   const backendSkills = [
     { name: 'Node.js', level: 84, icon: <SiNodedotjs size={18} /> },
     { name: 'Express.js', level: 87, icon: <SiExpress size={18} /> },
+    { name: 'Laravel', level: 85, icon: <SiLaravel size={18} /> },
+    { name: 'Django', level: 82, icon: <SiDjango size={18} /> },
     { name: 'MongoDB', level: 85, icon: <SiMongodb size={18} /> },
     { name: 'REST APIs', level: 80, icon: <TbApi size={18} /> },
     { name: 'PostgreSQL', level: 85, icon: <SiPostgresql size={18} /> },
   ];
 
-  const toolsSkills = [
-    { name: 'Git', level: 96, icon: <SiGit size={18} /> },
-    { name: 'Webpack/Vite', level: 99, icon: <SiWebpack size={18} /> },
-    { name: 'Jest/Testing Library', level: 90, icon: <SiJest size={18} /> },
-    { name: 'Figma/Adobe XD', level: 97, icon: <SiFigma size={18} /> },
-    { name: 'CI/CD', level: 90, icon: <SiGithubactions size={18} /> },
-  ];
+  // const toolsSkills = [
+  //   { name: 'Git', level: 96, icon: <SiGit size={18} /> },
+  //   { name: 'Webpack/Vite', level: 99, icon: <SiWebpack size={18} /> },
+  //   { name: 'Jest/Testing Library', level: 90, icon: <SiJest size={18} /> },
+  //   { name: 'Figma/Adobe XD', level: 97, icon: <SiFigma size={18} /> },
+  //   { name: 'CI/CD', level: 90, icon: <SiGithubactions size={18} /> },
+  // ];
+
+
 
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
@@ -258,11 +288,17 @@ const Skills: React.FC = () => {
             skills={backendSkills} 
           />
           
-          <SkillCategory 
+          {/* <SkillCategory 
             title="Tools & Workflow" 
             icon={<FaTools size={24} />}
             skills={toolsSkills} 
-          />
+          /> */}
+
+<SkillCategory 
+  title="Blockchain Development" 
+  icon={<FaEthereum size={24} />} 
+  skills={blockchainSkills} 
+/>
         </div>
         
         <div className="mt-16 text-center">
