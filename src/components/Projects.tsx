@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
       description: "A comprehensive dashboard for e-commerce businesses with analytics, inventory management, and order processing.",
       // image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       image: "/images/ecommerce-haru-fashion.png",
-      tags: ["React", "TypeScript", "Redux"],
+      tags: ["React", "TypeScript", "Redux", "Framer Mothion"],
       // liveUrl: "https://kachabazar-store-nine.vercel.app/",
       liveUrl: "https://haru-fashion.vercel.app/",
       githubUrl: "https://github.com/angrybee7/haru-trending-site"
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
       description: "A modern blog platform with markdown support, categories, search functionality, and a clean reading experience.",
       // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       image: "/images/blog-platform.png",
-      tags: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
+      tags: ["Next.js", "TypeScript", "MySQL", "TailwindCSS"],
       liveUrl: "https://ten-blog.vercel.app/",
       githubUrl: "https://github.com/angrybee7/nextjs-blog"
     },
@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
       description: "Implemented the tradingview chart using websocket and tradingview.",
       // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       image: "/images/tradingview-ohlcv.png",
-      tags: [ "TradingView", "Next.js", "TypeScript", "MongoDB", "TailwindCSS",  "Websocket.io"],
+      tags: [ "TradingView", "Next.js", "TypeScript", "MySQL", "TailwindCSS",  "Websocket.io"],
       liveUrl: "/",
       githubUrl: "https://github.com/angrybee7/tradingview_chart_homa"
     },
@@ -103,7 +103,7 @@ const Projects: React.FC = () => {
       description: "platform focused on cryptocurrency token creation and management. ",
       // image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       image: "/images/safetokenx.png",
-      tags: ["Next.js", "MongoDB", "TailwindCSS", "Solidity", "Web3.js", "Rust", "ancho-framework", "hardhat"],
+      tags: ["Next.js", "MySQL", "TailwindCSS", "Solidity", "Web3.js", "Rust", "ancho-framework", "hardhat"],
       liveUrl: "https://safetokenx.vercel.app/",
       githubUrl: "https://github.com/angrybee7/launchpad-safetokenx"
     },
