@@ -15,17 +15,7 @@ const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   
   const projects: Project[] = [
-    {
-      id: 1,
-      title: "Presale Website",
-      description: "platform that combines blockchain technology, artificial intelligence, and social media specifically designed for influencers and the fashion industry.",
-      // image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      image: "/images/presale.png",
-      tags: ["React", "TypeScript", "Redux", "Solidity", "Ether.js", "hardhat"],
-      // liveUrl: "https://kachabazar-store-nine.vercel.app/",
-      liveUrl: "https://app.insoblokai.io/",
-      githubUrl: "https://github.com/angrybee7/presale"
-    },
+
     {
       id: 2,
       title: "Portfolio Website",
